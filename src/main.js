@@ -3,14 +3,13 @@ import VueRouter from 'vue-router'
 // import { sync } from 'vuex-router-sync'
 Vue.use(VueRouter)
 import App from './App'
-// import Vuex from 'vuex'
-// Vue.use(Vuex)
-
+import Vuex from 'vuex'
+Vue.use(Vuex)
 
 /**
 * you can add your module here
 */
-// let store = new Vuex.Store({
+let store = new Vuex.Store({
 //   modules: {
 //     i18n: vuexI18n.store
 //   }
@@ -38,12 +37,11 @@ import App from './App'
 //       commit({type: 'updateDemoPosition', top: top})
 //     }
 //   }
-// })
+})
 
 // Vue.use(vuexI18n.plugin, store)
-
-const FastClick = require('fastclick')
-FastClick.attach(document.body)
+// const FastClick = require('fastclick')
+// FastClick.attach(document.body)
 
 import Home from './demos/Home.vue'
 
@@ -60,12 +58,12 @@ const router = new VueRouter({
   routes
 })
 
-sync(store, router)
+// sync(store, router)
 
 // simple history management
 const history = window.sessionStorage
 history.clear()
-let historyCount = history.getItem('count') * 1 || 0
+// let historyCount = history.getItem('count') * 1 || 0
 history.setItem('/', 0)
 
 // router.beforeEach(function (to, from, next) {

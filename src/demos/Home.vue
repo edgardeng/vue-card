@@ -1,7 +1,7 @@
 <!-- Created by dengxixi on 2017/6/27. -->
 <template>
   <div>
-    ddd
+    hello vue - card
   </div>
 </template>
 

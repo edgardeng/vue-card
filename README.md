@@ -1,5 +1,5 @@
 #vue-card   
- ![logo](favicon.ico)
+ ![logo](./src/assets/favicon.png)
 
 > vue-card is package of components for vue app
 
@@ -10,6 +10,11 @@
 + English(working)
 
 ## Maintainers
+
+## scripts
+
+
+
 
 
 ## Vux is Inspired or Powered By:
